@@ -1,6 +1,6 @@
 <template>
   <footer class="footer__container">
-    <nav>
+    <nav class="footer__links">
       <router-link to="/">Home</router-link>
       <router-link to="/learning">Learning</router-link>
     </nav>
@@ -18,7 +18,7 @@ nav {
   padding: 48px 24px;
 }
 
-nav a {
+.footer__links > a {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
