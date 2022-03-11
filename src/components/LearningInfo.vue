@@ -2,31 +2,11 @@
   <div class="learning__info">
     <h1>{{ msg }}</h1>
     <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nam,
-      reiciendis nostrum molestiae quasi quos voluptatibus aperiam numquam
-      facere beatae cumque ducimus recusandae eius non dignissimos voluptate
-      laborum consequatur? Magni. Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Quidem, ipsum et non corporis, possimus nemo quia in sit
-      perspiciatis quam nulla cum. Aliquid rem exercitationem eius! Nihil
-      deserunt officia hic.
-    </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nam,
-      reiciendis nostrum molestiae quasi quos voluptatibus aperiam numquam
-      facere beatae cumque ducimus recusandae eius non dignissimos voluptate
-      laborum consequatur? Magni. Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Quidem, ipsum et non corporis, possimus nemo quia in sit
-      perspiciatis quam nulla cum. Aliquid rem exercitationem eius! Nihil
-      deserunt officia hic.
-    </p>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse nam,
-      reiciendis nostrum molestiae quasi quos voluptatibus aperiam numquam
-      facere beatae cumque ducimus recusandae eius non dignissimos voluptate
-      laborum consequatur? Magni. Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Quidem, ipsum et non corporis, possimus nemo quia in sit
-      perspiciatis quam nulla cum. Aliquid rem exercitationem eius! Nihil
-      deserunt officia hic.
+      Welcome to Learning, the app where knowledge is found! Learning is
+      single-page application where users can get news about the newest courses
+      on the internet. They can see the description about the course, the date,
+      the count of lessons and is it still active. User can create courses also
+      edit and delete them!
     </p>
   </div>
 </template>
@@ -41,6 +21,11 @@ export default {
 </script>
 
 <style scoped>
+.learning__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .learning__info > h1 {
   text-decoration: underline;
   font-size: 65px;
