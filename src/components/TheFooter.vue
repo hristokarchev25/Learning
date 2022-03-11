@@ -32,8 +32,5 @@ nav a.router-link-exact-active {
   background-color: #101522;
   padding: 10px 10px 0px 10px;
   margin-top: auto;
-  /* position: fixed;
-  bottom: 0;
-  width: 100%; */
 }
 </style>

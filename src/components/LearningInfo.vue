@@ -45,11 +45,13 @@ export default {
   text-decoration: underline;
   font-size: 65px;
   letter-spacing: 1.4px;
+  margin: 50px;
 }
 .learning__info > p {
   color: #459fec;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
+  margin: 30px;
 }
 </style>
