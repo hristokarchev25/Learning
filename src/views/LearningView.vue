@@ -1,6 +1,7 @@
 <template>
   <TheHeader />
   <CourseCreate />
+  <CourseList />
   <TheFooter />
 </template>
 
@@ -8,6 +9,7 @@
 import TheFooter from "@/components/TheFooter.vue";
 import TheHeader from "@/components/TheHeader.vue";
 import CourseCreate from "@/components/CourseCreate.vue";
+import CourseList from "@/components/CourseList.vue";
 
 export default {
   name: "LearningView",
@@ -15,6 +17,7 @@ export default {
     TheFooter,
     TheHeader,
     CourseCreate,
+    CourseList,
   },
 };
 </script>
