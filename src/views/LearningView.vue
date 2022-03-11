@@ -1,16 +1,16 @@
 <template>
-  <LearningInfo msg="Learning" />
+  <div class="learning">
+    <h1>This is the Learning page</h1>
+  </div>
   <TheFooter />
 </template>
 
 <script>
-import LearningInfo from "@/components/LearningInfo.vue";
 import TheFooter from "@/components/TheFooter.vue";
 
 export default {
-  name: "HomeView",
+  name: "LearningView",
   components: {
-    LearningInfo,
     TheFooter,
   },
 };
