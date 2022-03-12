@@ -65,6 +65,7 @@ export default {
       lessons: "",
       date: "",
       image: "",
+      state: "Active",
     });
 
     const onSubmit = async () => {

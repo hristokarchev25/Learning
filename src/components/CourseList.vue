@@ -16,14 +16,27 @@
         </thead>
         <tbody>
           <tr
-            v-for="{ id, name, lessons, description, date, image } in courses"
+            v-for="{
+              id,
+              name,
+              lessons,
+              description,
+              date,
+              image,
+              state,
+            } in courses"
             :key="id"
           >
             <td>{{ id }}</td>
             <td>{{ name }}</td>
             <td>{{ description }}</td>
             <td>{{ lessons }}</td>
-            <td></td>
+            <td>
+              <select class="dropdown">
+                <option value="active">{{ state }}</option>
+                <option value="archived">Archived</option>
+              </select>
+            </td>
             <td>{{ date }}</td>
             <td><img v-bind:src="image" /></td>
             <td>
@@ -74,5 +87,11 @@ td > img {
 }
 .table_btn:hover {
   color: #459fec;
+}
+.dropdown {
+  border-radius: 10px;
+}
+.dropdown:hover {
+  cursor: pointer;
 }
 </style>
