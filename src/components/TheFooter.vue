@@ -20,7 +20,7 @@ nav {
 
 .footer__links > a {
   font-weight: bold;
-  color: #fff;
+  color: #f1faf5;
   text-decoration: none;
   padding: 10px;
 }

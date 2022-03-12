@@ -27,7 +27,7 @@ export default {
   font-size: 25px;
 }
 .header > span:hover {
-  color: #fff;
+  color: #f1faf5;
 }
 .header > img {
   width: 65px;

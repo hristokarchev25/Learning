@@ -1,5 +1,5 @@
 <template>
-  <div class="boreder__table">
+  <div class="border__table">
     <div class="card mt-4">
       <table class="table m-0">
         <thead>
@@ -28,9 +28,9 @@
             <td><img v-bind:src="image" /></td>
             <td>
               <router-link :to="`/edit/${id}`">
-                <button class="btn btn-primary btn-sm me-2">Edit</button>
+                <button class="table_btn">Edit</button>
               </router-link>
-              <button class="btn btn-danger btn-sm" @click="deleteCourse(id)">
+              <button class="table_btn" @click="deleteCourse(id)">
                 Delete
               </button>
             </td>
@@ -53,12 +53,26 @@ export default {
 </script>
 
 <style>
-.boreder__table {
+.border__table {
   margin: 25px;
-  /* border: 1px solid black; */
+}
+.border__table > div {
+  border: 1px solid black;
+  background-color: #f1faf5;
 }
 td > img {
   width: 55px;
   object-fit: contain;
+}
+.table_btn {
+  text-decoration: none;
+  background: #101522;
+  color: #f1faf5;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 3px;
+}
+.table_btn:hover {
+  color: #459fec;
 }
 </style>

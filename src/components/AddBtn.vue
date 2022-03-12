@@ -17,7 +17,7 @@ export default {
 .add__courseLink > a {
   text-decoration: none;
   background: #101522;
-  color: #fff;
+  color: #f1faf5;
   padding: 15px;
   border-radius: 25px;
 }

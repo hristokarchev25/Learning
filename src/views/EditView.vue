@@ -100,7 +100,7 @@ export default {
 .edit__btn {
   text-decoration: none;
   background: #101522;
-  color: #fff;
+  color: #f1faf5;
   padding: 10px;
   border-radius: 25px;
 }

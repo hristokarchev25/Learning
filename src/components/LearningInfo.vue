@@ -31,9 +31,10 @@ export default {
   font-size: 65px;
   letter-spacing: 1.4px;
   margin: 50px;
+  color: #f1faf5;
 }
 .learning__info > p {
-  color: #459fec;
+  color: #f1faf5;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
