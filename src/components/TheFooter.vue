@@ -24,6 +24,9 @@ nav {
   text-decoration: none;
   padding: 10px;
 }
+.footer__links > :hover {
+  color: #459fec;
+}
 
 nav a.router-link-exact-active {
   color: #459fec;

@@ -26,6 +26,9 @@ export default {
   color: #459fec;
   font-size: 25px;
 }
+.header > span:hover {
+  color: #fff;
+}
 .header > img {
   width: 65px;
   object-fit: contain;

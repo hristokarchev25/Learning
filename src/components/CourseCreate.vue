@@ -2,7 +2,7 @@
   <div class="form__create">
     <form @submit.prevent="onSubmit">
       <div class="form-group">
-        <label>Name</label>
+        <label>Course name</label>
         <input v-model="form.name" class="form-control" required />
       </div>
 
@@ -24,16 +24,16 @@
 <script>
 import { createCourse } from "@/firebase";
 import { reactive } from "vue";
-/* import { useRouter } from "vue-router"; */
+import { useRouter } from "vue-router";
 
 export default {
   setup() {
-    /* const router = useRouter(); */
+    const router = useRouter();
     const form = reactive({ name: "", description: "", date: "" });
 
     const onSubmit = async () => {
       await createCourse({ ...form });
-      /* router.push("/"); */
+      router.push("/learning");
       form.name = "";
       form.description = "";
       form.date = "";
