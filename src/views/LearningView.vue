@@ -1,8 +1,6 @@
 <template>
   <TheHeader />
-  <div class="add__courseLink">
-    <router-link to="/addCourse">Add course</router-link>
-  </div>
+  <AddBtn />
   <CourseList />
   <TheFooter />
 </template>
@@ -11,6 +9,7 @@
 import TheFooter from "@/components/TheFooter.vue";
 import TheHeader from "@/components/TheHeader.vue";
 import CourseList from "@/components/CourseList.vue";
+import AddBtn from "@/components/AddBtn.vue";
 
 export default {
   name: "LearningView",
@@ -18,22 +17,7 @@ export default {
     TheFooter,
     TheHeader,
     CourseList,
+    AddBtn,
   },
 };
 </script>
-
-<style>
-.add__courseLink {
-  margin: 25px;
-}
-.add__courseLink > a {
-  text-decoration: none;
-  background: #101522;
-  color: #fff;
-  padding: 15px;
-  border-radius: 25px;
-}
-.add__courseLink > a:hover {
-  color: #459fec;
-}
-</style>
