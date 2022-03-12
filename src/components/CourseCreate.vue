@@ -3,17 +3,46 @@
     <form @submit.prevent="onSubmit">
       <div class="form-group">
         <label>Course name</label>
-        <input v-model="form.name" class="form-control" required />
+        <input
+          v-model="form.name"
+          class="form-control"
+          placeholder="Type the name of the course"
+          required
+        />
+      </div>
+
+      <div class="form-group mt-3">
+        <label>Lessons</label>
+        <input
+          v-model="form.lessons"
+          class="form-control"
+          placeholder="Type the count of lessons. Must be a number!"
+          type="number"
+          required
+        />
       </div>
 
       <div class="form-group mt-3">
         <label>Description</label>
-        <input v-model="form.description" class="form-control" required />
+        <input
+          v-model="form.description"
+          class="form-control"
+          placeholder="Type description of the course"
+        />
       </div>
 
       <div class="form-group mt-3">
         <label>Date</label>
         <input v-model="form.date" class="form-control" type="date" required />
+      </div>
+
+      <div class="form-group mt-3">
+        <label>Image</label>
+        <input
+          v-model="form.image"
+          class="form-control"
+          placeholder="Copy image url from the Internet"
+        />
       </div>
 
       <button type="submit" class="btn btn-success mt-3">Create Course</button>
@@ -29,14 +58,22 @@ import { useRouter } from "vue-router";
 export default {
   setup() {
     const router = useRouter();
-    const form = reactive({ name: "", description: "", date: "" });
+    const form = reactive({
+      name: "",
+      description: "",
+      lessons: "",
+      date: "",
+      image: "",
+    });
 
     const onSubmit = async () => {
       await createCourse({ ...form });
       router.push("/learning");
       form.name = "";
       form.description = "";
+      form.lessons = "";
       form.date = "";
+      form.image = "";
     };
 
     return { form, onSubmit };
