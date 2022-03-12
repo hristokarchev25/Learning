@@ -1,7 +1,7 @@
 <template>
-  <div class="form__create">
-    <form @submit.prevent="onSubmit">
-      <div class="form-group">
+  <div class="form__container">
+    <form class="form__create" @submit.prevent="onSubmit">
+      <div>
         <label>Course name</label>
         <input
           v-model="form.name"
@@ -18,6 +18,7 @@
           class="form-control"
           placeholder="Type the count of lessons. Must be a number!"
           type="number"
+          min="1"
           required
         />
       </div>
@@ -45,7 +46,7 @@
         />
       </div>
 
-      <button type="submit" class="btn btn-success mt-3">Create Course</button>
+      <button type="submit" class="create__btn">Create Course</button>
     </form>
   </div>
 </template>
@@ -82,8 +83,31 @@ export default {
 </script>
 
 <style scoped>
+.form__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .form__create {
-  margin: 25px;
-  border: 1px solid black;
+  background-color: #f1faf5;
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+}
+.create__btn {
+  text-decoration: none;
+  background: #101522;
+  color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+}
+.create__btn:hover {
+  color: #459fec;
 }
 </style>

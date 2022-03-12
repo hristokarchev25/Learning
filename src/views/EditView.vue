@@ -1,7 +1,7 @@
 <template>
-  <div class="card card-body mt-4">
-    <h3>Edit courses</h3>
-    <form @submit.prevent="update">
+  <div class="edit__form__container">
+    <form class="form__edit" @submit.prevent="update">
+      <h3>Edit course</h3>
       <div class="form-group">
         <label>Name</label>
         <input v-model="form.name" class="form-control" required />
@@ -13,6 +13,7 @@
           v-model="form.lessons"
           class="form-control"
           type="number"
+          min="1"
           required
         />
       </div>
@@ -31,7 +32,7 @@
         <label>Image</label>
         <input v-model="form.image" class="form-control" />
       </div>
-      <button type="submit" class="btn btn-primary mt-3">Update</button>
+      <button type="submit" class="edit__btn">Update</button>
     </form>
   </div>
 </template>
@@ -77,3 +78,33 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.edit__form__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__edit {
+  background-color: #f1faf5;
+  width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+}
+.edit__btn {
+  text-decoration: none;
+  background: #101522;
+  color: #fff;
+  padding: 10px;
+  border-radius: 25px;
+}
+.edit__btn:hover {
+  color: #459fec;
+}
+</style>
