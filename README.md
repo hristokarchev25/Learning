@@ -4,7 +4,8 @@
 ```
 npm install
 ```
-
+### use only the line feed ( LF ) character in vs code.
+```
 ### Compiles and hot-reloads for development
 ```
 npm run serve
