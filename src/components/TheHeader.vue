@@ -34,5 +34,9 @@ export default {
   object-fit: contain;
   margin: 20px 20px;
   margin-top: 18px;
+  opacity: 1;
+}
+.header > img:hover {
+  opacity: 0.5;
 }
 </style>
