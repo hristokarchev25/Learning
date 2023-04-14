@@ -2,11 +2,12 @@
   <div class="learning__info">
     <h1>{{ msg }}</h1>
     <p>
-      Welcome to Learning, the app where knowledge is found! Learning is
-      single-page application where users can get news about the newest courses
-      on the internet. They can see the description about the course, the date,
-      the count of lessons and is it still active. User can create courses also
-      edit and delete them!
+      Welcome to The Learning App, place on the web where knowledge is found!
+      Learning is a CMS-Content Management System. Single-page application where
+      admins can add new content for the user part of the application.The can
+      create courses with short description about the course, the date, the
+      count of lessons and is it still active. Admins can also edit and delete
+      them!
     </p>
   </div>
 </template>
